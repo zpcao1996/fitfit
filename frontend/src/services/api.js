@@ -52,6 +52,40 @@ export const fundingApi = {
   delete: (id) => api.delete(`/funding/${id}`),
 };
 
+export const publicationApi = {
+  list: (params) => api.get('/publications', { params }),
+  get: (id) => api.get(`/publications/${id}`),
+  create: (data) => api.post('/publications', data),
+  update: (id, data) => api.put(`/publications/${id}`, data),
+  delete: (id) => api.delete(`/publications/${id}`),
+  stats: () => api.get('/publications/stats'),
+};
+
+export const milestoneApi = {
+  list: (params) => api.get('/milestones', { params }),
+  get: (id) => api.get(`/milestones/${id}`),
+  create: (data) => api.post('/milestones', data),
+  update: (id, data) => api.put(`/milestones/${id}`, data),
+  delete: (id) => api.delete(`/milestones/${id}`),
+};
+
+export const announcementApi = {
+  list: (params) => api.get('/announcements', { params }),
+  get: (id) => api.get(`/announcements/${id}`),
+  create: (data) => api.post('/announcements', data),
+  update: (id, data) => api.put(`/announcements/${id}`, data),
+  delete: (id) => api.delete(`/announcements/${id}`),
+};
+
+export const expenditureApi = {
+  list: (params) => api.get('/expenditures', { params }),
+  get: (id) => api.get(`/expenditures/${id}`),
+  create: (data) => api.post('/expenditures', data),
+  update: (id, data) => api.put(`/expenditures/${id}`, data),
+  delete: (id) => api.delete(`/expenditures/${id}`),
+  stats: () => api.get('/expenditures/stats'),
+};
+
 export const dashboardApi = {
   getStats: () => api.get('/dashboard'),
 };
