@@ -8,7 +8,11 @@ public record DashboardStats(
     long activeProjects,
     double totalFunding,
     long totalResearchers,
+    long totalPublications,
+    long totalMilestones,
+    double totalExpenditure,
     Map<String, Long> projectsByStatus,
     Map<String, Long> projectsByCategory,
+    Map<String, Long> publicationsByType,
     List<Map<String, Object>> recentProjects
 ) {}

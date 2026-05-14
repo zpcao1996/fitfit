@@ -10,6 +10,10 @@ import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
   ExperimentOutlined,
+  TrophyOutlined,
+  FlagOutlined,
+  NotificationOutlined,
+  DollarOutlined,
 } from '@ant-design/icons';
 
 const { Header, Sider, Content } = Layout;
@@ -18,7 +22,11 @@ const { Text } = Typography;
 const menuItems = [
   { key: '/dashboard', icon: <DashboardOutlined />, label: '数据概览' },
   { key: '/projects', icon: <ProjectOutlined />, label: '项目管理' },
+  { key: '/milestones', icon: <FlagOutlined />, label: '项目进度' },
   { key: '/researchers', icon: <TeamOutlined />, label: '科研人员' },
+  { key: '/publications', icon: <TrophyOutlined />, label: '成果管理' },
+  { key: '/expenditures', icon: <DollarOutlined />, label: '经费使用' },
+  { key: '/announcements', icon: <NotificationOutlined />, label: '通知公告' },
 ];
 
 export default function MainLayout() {
